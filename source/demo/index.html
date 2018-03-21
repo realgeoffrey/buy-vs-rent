@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="cmn-hans">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <title>buy-vs-rent demo</title>
+  <style>
+    label {
+      display: block;
+      padding: 1px;
+    }
+    p {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="">
+    <label for="loan">
+      贷款量（万）
+      <input type="number" id="loan" name="loan">万
+    </label>
+    <label for="loanRate">
+      贷款年利率
+      <input type="number" id="loanRate" name="loanRate" step="0.0001">
+    </label>
+    <label for="months">
+      还贷时间（月）
+      <input type="number" id="months" name="months">月
+    </label>
+    <hr>
+    <label for="cash">
+      首付|现金量（万）
+      <input type="number" id="cash" name="cash">万
+    </label>
+    <label for="cashRate">
+      现金年投资回报率
+      <input type="number" id="cashRate" name="cashRate" step="0.0001">
+    </label>
+    <label for="rent">
+      租房租金（万）
+      <input type="number" id="rent" name="rent" step="0.01">万
+    </label>
+    <label for="rentRate">
+      租房租金年涨幅率
+      <input type="number" id="rentRate" name="rentRate" step="0.0001">
+    </label>
+    <hr>
+    <label for="inflationRate">
+      年通货膨胀率
+      <input type="number" id="inflationRate" name="inflationRate" step="0.0001">
+    </label>
+    <hr>
+    <input type="submit" value="计算">
+  </form>
+  <p id="p"></p>
+</body>
+</html>

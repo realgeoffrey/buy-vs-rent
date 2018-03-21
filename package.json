@@ -1,0 +1,41 @@
+{
+  "name": "buy-vs-rent",
+  "description": "计算买房还是租房更值得",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:realgeoffrey/buy-vs-rent.git"
+  },
+  "keywords": [
+    "buy",
+    "rent",
+    "house"
+  ],
+  "author": "realgeoffrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realgeoffrey/buy-vs-rent/issues"
+  },
+  "homepage": "https://github.com/realgeoffrey/buy-vs-rent#readme",
+  "main": "source/buy-vs-rent.js",
+  "module": "source/buy-vs-rent.js",
+  "unpkg": "dist/buy-vs-rent.js",
+  "jsdelivr": "dist/buy-vs-rent.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "6",
+    "babel-loader": "7",
+    "babel-preset-env": "1",
+    "clean-webpack-plugin": "0",
+    "cross-env": "5",
+    "html-webpack-plugin": "3",
+    "webpack": "4",
+    "webpack-cli": "2",
+    "webpack-dev-server": "3",
+    "webpack-merge": "4"
+  },
+  "version": "1.2.2"
+}
