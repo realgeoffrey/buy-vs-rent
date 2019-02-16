@@ -5,7 +5,6 @@
 2. demo：<https://realgeoffrey.github.io/buy-vs-rent/demo/index.html>
 
 ### 安装
-
 1. node安装
 
     ```bash
@@ -14,7 +13,7 @@
 2. 浏览器引用
 
     ```html
-    <sciprt src="//unpkg.com/buy-vs-rent"></sciprt>
+    <script src="//unpkg.com/buy-vs-rent"></script>
     ```
 
 ### 使用
@@ -38,7 +37,7 @@
 2. 浏览器引用
 
     ```html
-    <sciprt src="//unpkg.com/buy-vs-rent"></sciprt>
+    <script src="//unpkg.com/buy-vs-rent"></script>
     <script>
         var obj = window.buyvsrent({
             loan: 300,           // 贷款量（万）
