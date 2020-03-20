@@ -5,7 +5,7 @@
 2. demo：<https://realgeoffrey.github.io/buy-vs-rent/demo/index.html>
 
 ### 安装
-1. node安装
+1. Node.js安装
 
     ```bash
     npm install buy-vs-rent
@@ -17,7 +17,7 @@
     ```
 
 ### 使用
-1. node
+1. Node.js
 
     ```javascript
     const buyvsrent = require('buy-vs-rent');

@@ -1,7 +1,7 @@
 const path = require('path')
 const merge = require('webpack-merge')  // 合并配置
 const base = require('./webpack.base')
-const CleanWebpackPlugin = require('clean-webpack-plugin')  // 清理文件（夹）
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')  // 清理文件（夹）
 
 module.exports = merge(base, {
   entry: {  // 入口文件
@@ -16,7 +16,7 @@ module.exports = merge(base, {
   },
 
   plugins: [
-    new CleanWebpackPlugin(['dist'], { root: path.resolve(__dirname, '..') })
+    new CleanWebpackPlugin()
   ],
 
   devtool: 'source-map', // 生成sourcemap
