@@ -22,7 +22,16 @@
   "jsdelivr": "dist/buy-vs-rent.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js",
+    "lint:js": "eslint --fix --ext .js ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   },
   "dependencies": {},
   "devDependencies": {
@@ -31,11 +40,21 @@
     "babel-loader": "8",
     "clean-webpack-plugin": "3",
     "cross-env": "7",
-    "html-webpack-plugin": "3",
+    "eslint": "7",
+    "eslint-config-prettier": "7",
+    "eslint-config-standard": "16",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "11",
+    "eslint-plugin-prettier": "3",
+    "eslint-plugin-promise": "4",
+    "html-webpack-plugin": "4",
+    "husky": "4",
+    "lint-staged": "10",
+    "prettier": "2",
     "webpack": "4",
     "webpack-cli": "3",
     "webpack-dev-server": "3",
     "webpack-merge": "4"
   },
-  "version": "1.2.4"
+  "version": "1.2.5"
 }

@@ -1,24 +1,21 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
-  context: path.resolve(__dirname, '..'), // 基础目录
+  context: path.resolve(__dirname, ".."), // 基础目录
 
-  module: { // 加载器
+  module: {
+    // 加载器
     rules: [
       {
         test: /(\.jsx|\.js)$/,
-        include: [
-          path.resolve(__dirname, '../source')
-        ],
+        include: [path.resolve(__dirname, "../source")],
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: [
-              '@babel/preset-env'
-            ]
+            presets: ["@babel/preset-env"]
           }
         }
       }
     ]
   }
-}
+};
