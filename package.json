@@ -56,5 +56,5 @@
     "webpack-dev-server": "3",
     "webpack-merge": "4"
   },
-  "version": "1.2.5"
+  "version": "1.2.6"
 }
