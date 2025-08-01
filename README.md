@@ -1,8 +1,10 @@
 # buy-vs-rent
+
+[![NPM Version](https://img.shields.io/npm/v/buy-vs-rent)](https://www.npmjs.com/package/buy-vs-rent)
+
 买房还是租房，计算哪个更值得。
 
-1. npm：<https://www.npmjs.com/package/buy-vs-rent>
-2. demo：<https://realgeoffrey.github.io/buy-vs-rent/demo/index.html>
+demo：<https://realgeoffrey.github.io/buy-vs-rent/demo/index.html>
 
 ### 安装
 1. Node.js安装
